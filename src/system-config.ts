@@ -7,10 +7,32 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'immutable': 'vendor/immutable/dist/immutable.js',
+  '@angular2-material': 'vendor/@angular2-material',
 };
 
 /** User packages configuration. */
 const packages: any = {
+  '@angular2-material/core': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'core.js'
+  },
+  '@angular2-material/input': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'input.js'
+  },
+  '@angular2-material/button': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'button.js'
+  },
+  '@angular2-material/card': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'card.js'
+  },
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -22,6 +44,7 @@ const barrels: string[] = [
   '@angular/core',
   '@angular/common',
   '@angular/compiler',
+  '@angular/forms', 
   '@angular/http',
   '@angular/router',
   '@angular/platform-browser',
@@ -33,6 +56,9 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/filters',
+  'app/talks',
+  'app/talks/talk',
   /** @cli-barrel */
 ];
 

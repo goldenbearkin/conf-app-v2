@@ -1,0 +1,6 @@
+<app-talk 
+  *ngFor="let talk of talks | speakerFilter:searchByName" 
+  [talk]="talk"
+  (watched)="onWatched($event)"
+  (rated)="onRated($event)">
+</app-talk>

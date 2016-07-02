@@ -1,0 +1,14 @@
+<md-card>
+  <md-card-header>
+    <md-card-title>{{talk.title}}</md-card-title>
+    <md-card-subtitle>by {{talk.speaker}}</md-card-subtitle>
+  </md-card-header>
+  <md-card-actions>
+    <button md-button (click)="onClickWatch()">
+      {{talk.watched ? 'WATCH AGAIN' : 'WATCH'}}
+    </button>
+    <button md-button (click)="onClickRate()">
+      {{talk.rated ? 'RATED' : 'RATE'}}
+    </button>
+  </md-card-actions>
+</md-card>
